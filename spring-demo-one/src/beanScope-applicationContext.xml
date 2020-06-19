@@ -10,20 +10,11 @@
 
 	<bean id = "myFurtune" class="com.vivek.springDemo.HappyFortuneService">
 	</bean>
-	<bean id = "myRandomFortune" class = "com.vivek.springDemo.RandomFortune">
-	
-	</bean>
-	
-	<bean id = "mycoach" class= "com.vivek.springDemo.TrackCoach">
+	<bean id = "mycoach" class= "com.vivek.springDemo.TrackCoach" scope="prototype">
 		<constructor-arg ref = "myFurtune"></constructor-arg>
 	</bean>
 	
-	<bean id = "mycricketcoach" class = "com.vivek.springDemo.CricketCoach">
-		<property name = "fortuneService" ref = "myRandomFortune" />
-		<!-- inject literal value  -->
-		<property name = "emailAddress" value = "${foo.email}"/>
-		<property name="team" value = "${foo.team}"/>
-	</bean>
+	
 	
 </beans>
 
