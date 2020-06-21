@@ -4,9 +4,10 @@ import java.util.Random;
 
 public class RandomFortune implements FortuneService {
 	
-	private String data[] = {
-			"Beware of the wolf in sheep's clothing",
-			"Diligence is the mother of good luck",
+
+	String data[] = {
+			"Beware of Wolf in ship's clothing",
+			"Dilligence is mother of good luck",
 			"The journey is the reward"
 	};
 	
